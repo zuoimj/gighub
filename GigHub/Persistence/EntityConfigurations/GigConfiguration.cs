@@ -19,7 +19,7 @@ namespace GigHub.Persistence.EntityConfigurations
 
             HasMany(g => g.Attendances)
                 .WithRequired(a => a.Gig)
-                .WillCascadeOnDelete();
+                .WillCascadeOnDelete(false);
         }
     }
 }
